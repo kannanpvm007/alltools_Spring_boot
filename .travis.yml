@@ -1,0 +1,14 @@
+language: java
+sudo: false
+before_install:
+- chmod +x mvnw
+# script:
+# - "./mvnw clean install -B"
+# - "./mvnw clean org.jacoco:jacoco-maven-plugin:prepare-agent package sonar:sonar"
+after_success:
+- bash <(curl -s https://codecov.io/bash)
+
+deploy:
+ provider: heroku
+ api_key: a607e439-6841-44eb-a881-6b6d1264c0dd
+ app: employeeab
