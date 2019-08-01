@@ -4,6 +4,7 @@ var app = new function () {
     // var url = "https://zigwheels.herokuapp.com/api/teams/";
     // http://localhost:8080/api/teams/
     var url = "http://localhost:8080/api/employee/";
+    // var url="https://employeeab.herokuapp.com/api/employee/";
     this.FetchAll = function () {
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function () {
